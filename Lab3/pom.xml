@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.6</version>
+        <version>3.5.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.poly</groupId>
-    <artifactId>Lab3</artifactId>
+    <groupId>poly.edu</groupId>
+    <artifactId>Java5</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Lab3</name>
-    <description>Lab3</description>
+    <name>Java5</name>
+    <description>Java5</description>
     <url/>
     <licenses>
         <license/>
