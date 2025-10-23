@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính toán Hình chữ nhật</title>
+</head>
+<body>
+<h2>Nhập chiều dài và chiều rộng</h2>
+<form th:action="@{/rectangle/calc}" method="post">
+    <label>Chiều dài:</label>
+    <input type="number" name="length" step="0.1" required><br><br>
+
+    <label>Chiều rộng:</label>
+    <input type="number" name="width" step="0.1" required><br><br>
+
+    <button type="submit">Tính</button>
+</form>
+
+<!-- Hiển thị kết quả -->
+<div th:if="${areaExpr != null}">
+    <p>Diện tích: <span th:text="${areaExpr}"></span></p>
+    <p>Chu vi: <span th:text="${perimeterExpr}"></span></p>
+    <p>Chiều dài: <span th:text="${length}"></span></p>
+    <p>Chiều rộng: <span th:text="${width}"></span></p>
+</div>
+
+
+</body>
+</html>
